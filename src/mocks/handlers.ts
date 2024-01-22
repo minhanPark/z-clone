@@ -24,4 +24,12 @@ export const handlers = [
       },
     });
   }),
+  http.post("/api/users", async () => {
+    console.log("회원가입");
+    return new HttpResponse.text(JSON.stringify("ok"), {
+      Headers: {
+        "Set-Cookie": "connect.sid=msw-cookie;HttpOnly;Path=/;Max-Age=0",
+      },
+    });
+  }),
 ];
