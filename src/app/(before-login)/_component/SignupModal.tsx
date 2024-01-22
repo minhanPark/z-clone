@@ -128,7 +128,7 @@ export default function SignupModal() {
               </div>
             </div>
             <div className={style.modalFooter}>
-              <button className={style.actionButton} disabled>
+              <button className={style.actionButton} type="submit">
                 가입하기
               </button>
             </div>
